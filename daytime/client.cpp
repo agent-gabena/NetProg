@@ -30,7 +30,7 @@ int main(){
     }
     sockaddr_in* server = new sockaddr_in;
     server->sin_family = AF_INET;
-    server->sin_port = htons(0);
+    server->sin_port = htons(2013);
     server->sin_addr.s_addr = inet_addr("172.16.40.1");
 
     socklen_t clen = sizeof(sockaddr_in);
